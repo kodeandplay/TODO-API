@@ -17,8 +17,8 @@ app.get('/todos', function(req, res) {
 	res.json(todos);
 });
 
-// GET /todo/:id
-app.get('/todo/:id', function(req, res) {
+// GET /todos/:id
+app.get('/todos/:id', function(req, res) {
 	var todoID = parseInt(req.params.id);
 	var found = false;
 	todos.forEach(function(todo) {
